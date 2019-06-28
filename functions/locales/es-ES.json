@@ -5,5 +5,10 @@
     "Letra de una canción",
     "Canciones de un género",
     "Hasta luego"
-  ]
+  ],
+  "ANSWER": "Mira lo que he encontrado",
+  "SPOTIFY": "Escuchar en Spotify",
+  "OTHER": "Otras consultas",
+  "GROUP_ERROR": "☹️ No he podido encontrar información sobre %s",
+  "EXAMPLES": "Aquí tienes algunos ejemplos"
 }

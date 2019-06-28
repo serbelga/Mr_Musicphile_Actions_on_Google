@@ -5,5 +5,10 @@
     "Lyrics of a song",
     "Songs about a genre",
     "Bye"
-  ]
+  ],
+  "ANSWER": "This is what I found",
+  "SPOTIFY": "Listen on Spotify",
+  "OTHER": "Other cuestions",
+  "GROUP_ERROR": "☹️ I didn't find anything about %s",
+  "EXAMPLES": "Some examples"
 }
