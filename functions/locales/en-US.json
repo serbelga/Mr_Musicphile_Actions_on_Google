@@ -1,0 +1,9 @@
+{
+  "WELCOME_BASIC": "Hi! What do you need?",
+  "SUGGESTIONS": [
+    "Information of an artist",
+    "Lyrics of a song",
+    "Songs about a genre",
+    "Bye"
+  ]
+}
