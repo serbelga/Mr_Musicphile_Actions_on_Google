@@ -118,3 +118,18 @@ exports.getArtistImageUrl = async (artist) => {
         return url;
     });
 };
+
+exports.getTracksByGenre = async (genre) => {
+    const session = await SpotifySession.open();
+    return session.get(`${API_URL}/search`, {
+        q: `genre:${genre}`,
+        type: 'track',
+        market: 'ES'
+    }).then(response => {
+        if (response.status !== 200) {
+            throw new Error(`Status ${response.status}`);
+        }
+        const tracks = response.data['tracks']['items'];
+        return tracks;
+    });
+};

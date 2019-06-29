@@ -1,5 +1,6 @@
 {
   "WELCOME_BASIC": "Hola! ¿Qué necesitas?",
+  "MENU_BASIC": "Aquí hay un ejemplo de lo que puedes hacer",
   "SUGGESTIONS": [
     "Información de un artista",
     "Letra de una canción",
@@ -11,5 +12,10 @@
   "OTHER": "Otras consultas",
   "GROUP_ERROR": "☹️ No he podido encontrar información sobre %s",
   "LYRICS_ERROR": "No he podido encontrar la letra %s de %s",
-  "EXAMPLES": "Aquí tienes algunos ejemplos"
+  "GENRE_SONGS": "Canciones del género %s",
+  "GENRE_SONGS_ERROR": "No he encontrado canciones del género %s",
+  "GROUP_LYRICS_ERROR": "No he podido encontrar información",
+  "EXAMPLES": "Aquí tienes algunos ejemplos",
+  "UNKNOWN_ARTIST": "Artista desconocido",
+  "UNKNOWN_ALBUM": "Álbum desconocido"
 }

@@ -11,3 +11,10 @@ exports.welcomeHandler = (conv) => {
         index.i18n.__('SUGGESTIONS')
     ));
 };
+
+exports.mainOptionsHandler = (conv) => {
+    conv.ask(index.i18n.__("MENU_BASIC"));
+    conv.ask(new Suggestions(
+        index.i18n.__('SUGGESTIONS')
+    ));
+};

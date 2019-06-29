@@ -1,5 +1,6 @@
 {
   "WELCOME_BASIC": "Hi! What do you need?",
+  "MENU_BASIC": "Here there's an example of what you can do",
   "SUGGESTIONS": [
     "Information of an artist",
     "Lyrics of a song",
@@ -11,5 +12,10 @@
   "OTHER": "Other cuestions",
   "GROUP_ERROR": "☹️ I didn't find anything about %s",
   "LYRICS_ERROR": "I didn't find %s by %s",
-  "EXAMPLES": "Some examples"
+  "GENRE_SONGS": "%s songs",
+  "GENRE_SONGS_ERROR": "I didn't find songs of %s",
+  "GROUP_LYRICS_ERROR": "I didn't find anything about that",
+  "EXAMPLES": "Some examples",
+  "UNKNOWN_ARTIST": "Unknown artist",
+  "UNKNOWN_ALBUM": "Unknown album"
 }
