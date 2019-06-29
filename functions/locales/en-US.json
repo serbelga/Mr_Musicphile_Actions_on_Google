@@ -10,5 +10,6 @@
   "SPOTIFY": "Listen on Spotify",
   "OTHER": "Other cuestions",
   "GROUP_ERROR": "☹️ I didn't find anything about %s",
+  "LYRICS_ERROR": "I didn't find %s by %s",
   "EXAMPLES": "Some examples"
 }

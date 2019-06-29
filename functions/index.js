@@ -11,6 +11,7 @@ const i18n = require('i18n');
 const initial = require('./initial.js');
 const group_info_lastfm = require('./group_info_lastfm');
 const genre_suggestions = require('./genre_suggestions');
+const song_lyrics = require('./song_lyrics_genius');
 
 i18n.configure({
     locales: ['es-ES', 'en-US'],
@@ -34,6 +35,9 @@ app.intent('given_group_info', group_info_lastfm.groupInfoLastFmHandler);
 app.intent('given_group_info_next', group_info_lastfm.groupInfoLastFmHandler);
 
 app.intent('genre_songs', genre_suggestions.genreSuggestionsHandler);
+
+app.intent('given_song_lyrics', song_lyrics.groupTrackLyricsGeniusHandler);
+app.intent('song_lyrics_next', song_lyrics.groupTrackLyricsGeniusHandler);
 
 // Set the DialogflowApp object to handle the HTTPS POST request.
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app);
