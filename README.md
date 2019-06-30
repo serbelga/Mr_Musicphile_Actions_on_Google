@@ -1,9 +1,12 @@
-# Musicphile 2 - Actions on Google
+# Mr Musicphile - Actions on Google
 
-Musicphile 2 is an agent to find information about artists, lyrics, songs of an artists that contain a specific word, songs by feels and songs by genres. Developed using Dialogflow and Cloud Functions.  
+<img src="./repo_images/ic_launcher.png" height="80">
+
+Mr Musicphile is an agent to find information about artists, lyrics, songs of an artists that contain a specific word, songs by feels and songs by genres. Developed using Dialogflow and Cloud Functions.
+
+<img src="./repo_images/google_assistant_logo.svg?sanitize=true" height="80">
+
 - **Languages:** Spanish and English
-
-<img src="./repo_images/google_assistant_logo.svg?sanitize=true" width="720" height="120">
 
 ## Use cases
 
