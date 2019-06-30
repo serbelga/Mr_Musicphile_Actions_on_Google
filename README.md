@@ -20,6 +20,8 @@ Retrieves information about an artist. The information is extracted from Last.fm
 - Information about the artist artist
 - Give information about artist
 
+<img src="./repo_images/artist_information.png" height="480">
+
 ### Lyrics
 
 Uses Genius API and Web Scraping to get the lyrics.
@@ -31,11 +33,15 @@ Uses Genius API and Web Scraping to get the lyrics.
 - Search the lyrics of track
 - Give me the lyrics of track
 
+<img src="./repo_images/song_lyrics.png" height="480">
+
 ### Songs by genre
 
 #### Phrases
 
 - Songs of genre
+
+<img src="./repo_images/songs_genre.png" height="480"> <img src="./repo_images/songs_genre_1.png" height="480">
 
 ### Songs of an artist that contain a specific term
 
@@ -45,3 +51,5 @@ For this use case, it's used the Musixmatch API
 
 - Songs by group that have the word word
 - I want songs by group that have the word word
+
+<img src="./repo_images/songs_group_word.png" height="480">
