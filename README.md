@@ -2,7 +2,7 @@
 
 <img src="./repo_images/ic_launcher.png" height="80">
 
-Mr Musicphile is an agent to find information about artists, lyrics, songs of an artists that contain a specific word, songs by feels and songs by genres. Developed using Dialogflow and Cloud Functions.
+Mr Musicphile is an agent to find information about artists, lyrics, artists songs that contain a specific word, songs by feels and songs by genres. Developed using Dialogflow and Cloud Functions.
 
 <img src="./repo_images/google_assistant_logo.svg?sanitize=true" height="80">
 
