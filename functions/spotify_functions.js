@@ -64,6 +64,7 @@ exports.getTrackUrl = async (title, artist) => {
         return url;
     });
 };
+
 /**
  * Gets the URL for an artist
  * @param artist
@@ -89,6 +90,7 @@ exports.getArtistUrl = async (artist) => {
         return url;
     });
 };
+
 /**
  * Gets the URL for an artist image
  * @param artist
@@ -119,6 +121,11 @@ exports.getArtistImageUrl = async (artist) => {
     });
 };
 
+/**
+ * Gets tracks by genre
+ * @param genre
+ * @returns {Promise<*>}
+ */
 exports.getTracksByGenre = async (genre) => {
     const session = await SpotifySession.open();
     return session.get(`${API_URL}/search`, {
@@ -131,5 +138,36 @@ exports.getTracksByGenre = async (genre) => {
         }
         const tracks = response.data['tracks']['items'];
         return tracks;
+    });
+};
+
+exports.getTracksByFeeling = async (artist, feel) => {
+    const session = await SpotifySession.open();
+    return session.get(`${API_URL}/search`, {
+        q: `artist:${artist}`,
+        type: 'track',
+        limit: 20,
+        market: 'ES'
+    }).then(async response => {
+        if (response.status !== 200) {
+            throw new Error(`Status ${response.status}`);
+        }
+        const tracks = response.data['tracks']['items'];
+
+        const featuresResponse = await session.get(`${API_URL}/audio-features`, {
+            ids: tracks.map(track => track.id).join(',')
+        });
+
+        const features = featuresResponse.data.audio_features;
+
+        return tracks.map(track => {
+            const trackFeatures = features.find(_track => _track.id === track.id);
+
+            Object.keys(trackFeatures).forEach(feature => {
+                track[feature] = trackFeatures[feature];
+            });
+
+            return track;
+        })
     });
 };
